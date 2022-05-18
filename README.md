@@ -30,7 +30,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Esvironment variable setup
+## Environment variable setup
 
 Below constant variables required for running the application and connecting to the database. create the .env file in the 
 root of the project and add the respective variables
