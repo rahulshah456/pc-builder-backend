@@ -29,10 +29,10 @@ app.post("/welcome", auth, (req, res) => {
     res.status(200).send("Welcome to Auth Project!");
 });
 
-// Handles routes related to download via list of links
+// Handle routes related to pc rig components
 app.use("/component", componentRoutes);
 
-// Handles routes related to download via list of links
+// Handle routes related to user login/register
 app.use("/user", userRoutes);
 
 module.exports = app;

@@ -1,4 +1,5 @@
 const express = require("express");
+const { componentRoutesMapping } = require("../const/constants");
 const { rigComponentIds, getComponentsById } = require("../services/componentService");
 
 let router = express.Router();
@@ -10,7 +11,7 @@ router.route('/:componentId')
             res.status(404).send(`No data available for ${componentId}.`);
         }
 
-        getComponentsById(componentId)
+        getComponentsById(componentRoutesMapping.get(componentId))
             .then(data => {
                 res.status(200).send(data);
             }).catch(error => {
